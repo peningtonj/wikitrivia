@@ -62,7 +62,6 @@ export default function ItemCard(props: Props) {
 
     return item.instance_of[0];
   }, [item]);
-
   return (
     <Draggable draggableId={item.id} index={index} isDragDisabled={!draggable}>
       {(provided, snapshot) => {

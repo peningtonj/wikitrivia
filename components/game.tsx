@@ -6,6 +6,7 @@ import createState from "../lib/create-state";
 import Board from "./board";
 import Loading from "./loading";
 import Instructions from "./instructions";
+import data from "../items.json"
 
 export default function Game() {
   const [state, setState] = useState<GameState | null>(null);
@@ -15,17 +16,8 @@ export default function Game() {
 
   React.useEffect(() => {
     const fetchGameData = async () => {
-      const res = await axios.get<string>(
-        "http://localhost:8000/items.json"
-      );
-      const items: Item[] = res.data
-        .trim()
-        .split("\n")
-        .map((line) => {
-          return JSON.parse(line);
-        })
-        // Filter out questions which give away their answers
-        .filter((item) => !item.label.includes(String(item.data)));
+      const items: Item[] = data.data
+      console.log(items)
       setItems(items);
     };
 

@@ -2,7 +2,7 @@ import { Item, PlayedItem } from "../types/item";
 import { createWikimediaImage } from "./image";
 
 export function getRandomItem(deck: Item[], played: Item[]): Item {
-  const playedYears = played.map((item): number => {
+  const playedYears = played.map((item): string => {
     return item.data;
   });
   let item: Item | undefined = undefined;
@@ -29,22 +29,10 @@ export function getRandomItem(deck: Item[], played: Item[]): Item {
     const index = Math.floor(Math.random() * deck.length);
     const candidate = deck[index];
 
-    if (avoidPeople && candidate.instance_of.includes("human")) {
-      continue;
-    }
-
-    if (candidate.year < fromYear || candidate.year > toYear) {
-      continue;
-    }
-
-    if (playedYears.includes(candidate.year)) {
-      continue;
-    }
-
     deck.splice(index, 1);
     item = { ...candidate };
   }
-
+  console.log(item)
   return item;
 }
 
