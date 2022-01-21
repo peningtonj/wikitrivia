@@ -52,9 +52,9 @@ export default function ItemCard(props: Props) {
   const type = React.useMemo(() => {
     const safeDescription = item.description.replace(/ \(.+\)/g, "");
 
-    if (item.description.length < 60 && !/\d\d/.test(safeDescription)) {
-      return item.description.replace(/ \(.+\)/g, "");
-    }
+    // if (item.description.length < 60 && !/\d\d/.test(safeDescription)) {
+    return item.description.replace(/ \(.+\)/g, "");
+    // }
 
     if (item.instance_of.includes("human") && item.occupations !== null) {
       return item.occupations[0];
