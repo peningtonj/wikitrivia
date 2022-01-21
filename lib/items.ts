@@ -32,7 +32,6 @@ export function getRandomItem(deck: Item[], played: Item[]): Item {
     deck.splice(index, 1);
     item = { ...candidate };
   }
-  console.log(item)
   return item;
 }
 
@@ -40,9 +39,9 @@ function date_sort(
   a: string,
   b: string
 ): number {
-  var da = new Date(a);
-  var db = new Date(b)
-  var s = da.getTime() - db.getTime()
+  const da = new Date(a);
+  const db = new Date(b)
+  const s = da.getTime() - db.getTime()
   return s
 }
 

@@ -110,10 +110,10 @@ export default function ItemCard(props: Props) {
               >
                 <span>
                   {"played" in item
-                    ? item.data < -10000
+                    ? item.data
                       ? item.data.toLocaleString()
                       : item.data.toString()
-                    : datePropIdMap[item.date_prop_id]}
+                    : capitalize(datePropIdMap[item.date_prop_id])}
                 </span>
               </animated.div>
             </animated.div>
