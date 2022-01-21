@@ -3,7 +3,7 @@ import { createWikimediaImage } from "./image";
 
 export function getRandomItem(deck: Item[], played: Item[]): Item {
   const playedYears = played.map((item): number => {
-    return item.year;
+    return item.data;
   });
   let item: Item | undefined = undefined;
   let iterations = 0;
@@ -48,12 +48,22 @@ export function getRandomItem(deck: Item[], played: Item[]): Item {
   return item;
 }
 
+function date_sort(
+  a: string,
+  b: string
+): number {
+  var da = new Date(a);
+  var db = new Date(b)
+  var s = da.getTime() - db.getTime()
+  return s
+}
+
 export function checkCorrect(
   played: PlayedItem[],
   item: Item,
   index: number
 ): { correct: boolean; delta: number } {
-  const sorted = [...played, item].sort((a, b) => a.year - b.year);
+  const sorted = [...played, item].sort((a, b) => date_sort(a.data, b.data));
   const correctIndex = sorted.findIndex((i) => {
     return i.id === item.id;
   });

@@ -9,7 +9,7 @@ export interface Item {
   occupations: string[] | null;
   page_views: number;
   wikipedia_title: string;
-  year: number;
+  data: string;
 }
 
 export type PlayedItem = Item & {

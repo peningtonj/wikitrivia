@@ -29,7 +29,7 @@ const datePropIdMap: { [datePropId: string]: string } = {
   P569: "born",
   P570: "died",
   P582: "ended",
-  P580: "started",
+  P580: "Event",
   P7125: "latest one",
   P7124: "first one",
 };
@@ -111,9 +111,9 @@ export default function ItemCard(props: Props) {
               >
                 <span>
                   {"played" in item
-                    ? item.year < -10000
-                      ? item.year.toLocaleString()
-                      : item.year.toString()
+                    ? item.data < -10000
+                      ? item.data.toLocaleString()
+                      : item.data.toString()
                     : datePropIdMap[item.date_prop_id]}
                 </span>
               </animated.div>
@@ -129,7 +129,7 @@ export default function ItemCard(props: Props) {
             >
               <span className={styles.label}>{capitalize(item.label)}</span>
               <span className={styles.date}>
-                {capitalize(datePropIdMap[item.date_prop_id])}: {item.year}
+                {capitalize(datePropIdMap[item.date_prop_id])}: {item.data}
               </span>
               <span className={styles.description}>{item.description}.</span>
               <a
