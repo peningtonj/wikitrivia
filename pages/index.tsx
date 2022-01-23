@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-const Game = dynamic(() => import("../components/game"), { ssr: false });
+const Menu = dynamic(() => import("../components/menu"), { ssr: false });
 
 export default function Index() {
   return (
@@ -16,7 +16,7 @@ export default function Index() {
         />
       </Head>
 
-      <Game />
+      <Menu />
     </>
   );
 }

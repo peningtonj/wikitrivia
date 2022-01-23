@@ -1,23 +1,33 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { GameState } from "../types/game";
 import { Item } from "../types/item";
 import createState from "../lib/create-state";
 import Board from "./board";
 import Loading from "./loading";
-import Instructions from "./instructions";
-import data from "../items.json"
 
-export default function Game() {
+interface Props {
+  highscore: number;
+  setHighscore: (score: number) => void;
+  mode: string;
+}
+
+export default function Game(props: Props) {
+  console.log("Game")
+  const { highscore, setHighscore, mode } = props;
   const [state, setState] = useState<GameState | null>(null);
   const [loaded, setLoaded] = useState(false);
-  const [started, setStarted] = useState(false);
   const [items, setItems] = useState<Item[] | null>(null);
 
   React.useEffect(() => {
     const fetchGameData = async () => {
+      let data = null
+      if (mode === "test") {
+        data = require("../test.json");
+      }
+      if (mode === "cccc") {
+        data = require("../cccc_batting.json");
+      }
       const items: Item[] = data.data
-      console.log(items)
       setItems(items);
     };
 
@@ -41,9 +51,6 @@ export default function Game() {
     })();
   }, [items]);
 
-  const [highscore, setHighscore] = React.useState<number>(
-    Number(localStorage.getItem("highscore") ?? "0")
-  );
 
   const updateHighscore = React.useCallback((score: number) => {
     localStorage.setItem("highscore", String(score));
@@ -54,11 +61,6 @@ export default function Game() {
     return <Loading />;
   }
 
-  if (!started) {
-    return (
-      <Instructions highscore={highscore} start={() => setStarted(true)} />
-    );
-  }
 
   return (
     <Board

@@ -6,7 +6,7 @@ import Score from "./score";
 
 interface Props {
   highscore: number;
-  start: () => void;
+  start: (mode: string) => void;
 }
 
 export default function Instructions(props: Props) {
@@ -19,7 +19,8 @@ export default function Instructions(props: Props) {
         <div className={styles.highscoreWrapper}>
           <Score score={highscore} title="Best streak" />
         </div>
-        <Button onClick={start} text="Start game!" />
+        <Button onClick={() => start("test")} text="Test Edition!" />
+        <Button onClick={() => start("cccc")} text="CCCC Edition!" />
         <div className={styles.about}>
           <div>
             All data sourced from{" "}
