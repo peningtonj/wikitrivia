@@ -1,81 +1,32 @@
 {
-  "quiz": {
-    "title": "Australian Government Budget Quiz",
-    "questions": [
-      {
+  "config": {
+    "name": "Superquiz for Tuesday, March 25, 2025"
+  },
+  "data": [
+    {
         "question": "What is the name of the Treasurer who delivers the Australian Federal Budget in 2025?",
         "answer": "Jim Chalmers (as of 2025)",
-        "difficulty": "easy"
+        "level": 1,
       },
       {
         "question": "In which month is the Australian Federal Budget traditionally handed down?",
         "answer": "May",
-        "difficulty": "easy"
+       "level": 1,
       },
       {
         "question": "What is the name of the official statement that outlines the government's expected revenue and spending?",
         "answer": "Budget Papers",
-        "difficulty": "easy"
+       "level": 1,
       },
       {
         "question": "Which department is primarily responsible for preparing the Federal Budget?",
         "answer": "The Department of the Treasury",
-        "difficulty": "easy"
+       "level": 1,
       },
       {
         "question": "What does 'surplus' mean in the context of the budget?",
         "answer": "When government revenue exceeds spending",
-        "difficulty": "easy"
-      },
-      {
-        "question": "What are the three largest areas of government spending in the Federal Budget?",
-        "answer": "Health, Social Security & Welfare, and Education",
-        "difficulty": "medium"
-      },
-      {
-        "question": "Which agency provides independent analysis of the Budget and government finances?",
-        "answer": "The Parliamentary Budget Office (PBO)",
-        "difficulty": "medium"
-      },
-      {
-        "question": "What is the Mid-Year Economic and Fiscal Outlook (MYEFO), and when is it usually released?",
-        "answer": "A budget update released in December each year",
-        "difficulty": "medium"
-      },
-      {
-        "question": "What is the term for unexpected additional funding allocated to specific programs outside of the usual budget process?",
-        "answer": "Additional Estimates",
-        "difficulty": "medium"
-      },
-      {
-        "question": "What is the difference between fiscal policy and monetary policy?",
-        "answer": "Fiscal policy refers to government spending and taxation decisions, while monetary policy refers to interest rate and money supply management by the Reserve Bank of Australia (RBA)",
-        "difficulty": "medium"
-      },
-      {
-        "question": "What is the 'fiscal balance' and how does it differ from the underlying cash balance?",
-        "answer": "The fiscal balance includes accrual accounting adjustments, while the underlying cash balance focuses on cash transactions.",
-        "difficulty": "hard"
-      },
-      {
-        "question": "What are the three pillars of the Charter of Budget Honesty Act 1998?",
-        "answer": "The Budget, the Mid-Year Economic and Fiscal Outlook (MYEFO), and the Final Budget Outcome",
-        "difficulty": "hard"
-      },
-      {
-        "question": "Which economic indicator is used to measure the sustainability of government debt?",
-        "answer": "The debt-to-GDP ratio",
-        "difficulty": "hard"
-      },
-      {
-        "question": "How does bracket creep affect income tax revenue over time?",
-        "answer": "As wages rise, taxpayers move into higher tax brackets, increasing government revenue without changes to tax rates.",
-        "difficulty": "hard"
-      },
-      {
-        "question": "In the event of an early election, what special budget document must be produced to give an updated fiscal outlook?",
-        "answer": "The Pre-election Economic and Fiscal Outlook (PEFO)",
-        "difficulty": "hard"
+"level": 1,
       }
     ]
   }
