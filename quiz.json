@@ -4,30 +4,79 @@
   },
   "data": [
     {
-        "question": "What is the name of the Treasurer who delivers the Australian Federal Budget in 2025?",
-        "answer": "Jim Chalmers (as of 2025)",
-        "level": 1,
-      },
-      {
-        "question": "In which month is the Australian Federal Budget traditionally handed down?",
-        "answer": "May",
-       "level": 1,
-      },
-      {
-        "question": "What is the name of the official statement that outlines the government's expected revenue and spending?",
-        "answer": "Budget Papers",
-       "level": 1,
-      },
-      {
-        "question": "Which department is primarily responsible for preparing the Federal Budget?",
-        "answer": "The Department of the Treasury",
-       "level": 1,
-      },
-      {
-        "question": "What does 'surplus' mean in the context of the budget?",
-        "answer": "When government revenue exceeds spending",
-"level": 1,
-      }
-    ]
+      "answer": "\u003Cp\u003EThe heart\u003C/p\u003E",
+      "level": 1,
+      "question": "\u003Cp\u003EWhich major organ of the body consists of two atria and two ventricles?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EProof\u003C/p\u003E",
+      "level": 1,
+      "question": "\u003Cp\u003EProverbially speaking, the (what) of the pudding is in the eating?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EPharmaceutical Benefits Scheme\u003C/p\u003E",
+      "level": 1,
+      "question": "\u003Cp\u003EA subsidy program in Australia, PBS stands for what scheme?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EOver the ocean\u003C/p\u003E",
+      "level": 1,
+      "question": "\u003Cp\u003EDoes wind typically blow faster over the land or over the ocean?\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003ELion&nbsp;\u003C/p\u003E",
+      "level": 1,
+      "question": "\u003Cp\u003EPusillanimous is an apt descriptor for which one of Dorothy’s companions in \u003Cem\u003EThe Wizard of Oz\u003C/em\u003E: Scarecrow, Tin Man or Lion?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EGolden Gaytime\u003C/p\u003E",
+      "level": 2,
+      "question": "\u003Cp\u003EThe ice-cream marketed as Cookie Crumble in New Zealand goes by what alliterative name in Australia?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EChina\u003C/p\u003E",
+      "level": 2,
+      "question": "\u003Cp\u003EAustralia’s Oscar Piastri won the Formula 1 Grand Prix held in which country over the weekend?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EMe (\u003Cem\u003EYou Really Got Me\u003C/em\u003E)\u003C/p\u003E",
+      "level": 2,
+      "question": "\u003Cp\u003EWhat have “you really got”, according to the title of a classic Kinks song?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EGeelong\u003C/p\u003E",
+      "level": 2,
+      "question": "\u003Cp\u003EPivotonians is an old nickname for which football club in the AFL?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EPlaster\u003C/p\u003E",
+      "level": 2,
+      "question": "\u003Cp\u003EBuon fresco is a fresco painting technique in which pigments are applied to wet what?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EBuildings, antennas, spans (bridges) and the earth\u003C/p\u003E",
+      "level": 3,
+      "question": "\u003Cp\u003EIn the sport of BASE jumping, what does BASE stand for?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EThe Staple Singers\u003C/p\u003E",
+      "level": 3,
+      "question": "\u003Cp\u003EWhich singers sang \u003Cem\u003EI’ll Take You There\u003C/em\u003E in 1972?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003ETen dollar note\u003C/p\u003E",
+      "level": 3,
+      "question": "\u003Cp\u003EThe bramble wattle and the sulphur-crested cockatoo appear on which Australian banknote?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EBoxing\u003C/p\u003E",
+      "level": 3,
+      "question": "\u003Cp\u003EEmmanuel Agassi, father of tennis great Andre, competed at two Summer Olympics in which sport?&nbsp;\u003C/p\u003E"
+    },
+    {
+      "answer": "\u003Cp\u003EKLM Royal Dutch Airlines (Founded on October 7, 1919)\u003C/p\u003E",
+      "level": 3,
+      "question": "\u003Cp\u003EWhich European carrier is recognised as the world’s oldest continuously operating airline?&nbsp;\u003C/p\u003E"
+    }
+  ]
 }
-
